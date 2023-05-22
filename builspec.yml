@@ -1,11 +1,10 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 14
     commands:
       - npm cache clean --force
+      - npm install -g n
+      - n 14
       - npm i
   pre_build:
     commands:
