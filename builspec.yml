@@ -5,10 +5,10 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - yarn install
+      - npm i
   pre_build:
     commands:
-      - yarn build
+      #- yarn build
   build:
     commands:
       - npx cypress run
