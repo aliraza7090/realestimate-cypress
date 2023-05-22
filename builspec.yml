@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18.11.0
+    commands:
+      - yarn install
+  pre_build:
+    commands:
+      - yarn build
+  build:
+    commands:
+      - npx cypress run
