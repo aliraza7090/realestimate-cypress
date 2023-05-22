@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - npm cache clean --force
       - npm i
   pre_build:
     commands:
